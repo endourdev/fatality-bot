@@ -1,5 +1,5 @@
 <h1>EN</h1>
-### Getting Started with DiscordJs
+<h2>Start with DiscordJs</h2>
 
 
 ## A simple bot by Fofhgit
