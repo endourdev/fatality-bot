@@ -1,5 +1,5 @@
 <h1>EN</h1>
-# Getting Started with DiscordJs
+### Getting Started with DiscordJs
 
 
 ## A simple bot by Fofhgit
@@ -15,10 +15,10 @@ Create a config.json file and type this :
 }
 ````
 
-### Start your bot with
+### You need to install NodeJs
+## Windows : https://nodejs.org/dist/v19.1.0/node-v19.1.0-x64.msi
 
-## You need to install NodeJs
-### Windows : https://nodejs.org/dist/v19.1.0/node-v19.1.0-x64.msi
+### Start your bot with
 ````
 npm install
 npm run start
@@ -49,10 +49,10 @@ Créer un fichier package.json et entrez ceci :
 }
 ````
 
-### Démarre ton bot avec
+### Tu as besoin d'installer NodeJs
+## Windows : https://nodejs.org/dist/v19.1.0/node-v19.1.0-x64.msi
 
-## Tu as besoin d'installer NodeJs
-### Windows : https://nodejs.org/dist/v19.1.0/node-v19.1.0-x64.msi
+### Démarre ton bot avec
 ````
 npm install
 npm run start
