@@ -1,11 +1,16 @@
+// Déclarer toute les variables importantes
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const { token } = require('./config.json');
 const { type } = require('node:os');
 
+
+// Déclare les Intents
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
+
+// Code Qui Permet D'enregister les slash commands
 const eventsPath = path.join(__dirname, 'events');
 const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
 
@@ -29,6 +34,8 @@ for (const file of commandFiles) {
 	client.commands.set(command.data.name, command);
 }
 
+
+// Bout de code qui permet déclarer le statut du bot et son username.
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 	// client.user.setPresence('WATCHING')
@@ -40,6 +47,8 @@ client.once(Events.ClientReady, () => {
 	// console.log('Ready!');
 });
 
+
+// Bout de code qui permet de retourner une erreur lors ce que une commande est mal écrite dans le code.
 client.on(Events.InteractionCreate, async interaction => {
 	if (!interaction.isChatInputCommand()) return;
 
@@ -55,4 +64,6 @@ client.on(Events.InteractionCreate, async interaction => {
 	}
 });
 
+
+// Connecte le bot à Discord avec le const { token }.
 client.login(token);
