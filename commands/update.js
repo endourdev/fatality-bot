@@ -8,14 +8,14 @@ module.exports = {
 	async execute(interaction) {
         const exampleEmbed = new EmbedBuilder()
     .setColor(0x0099FF)
-    .setTitle(`🎮・Chill Bot Update\'s`)
+    .setTitle(`🎮・Fatality Bot Update\'s`)
     // .setThumbnail('https://cdn.discordapp.com/avatars/1041409110056382494/3de5e5286ad94e0d3823cdcb6a671e3a.webp?size=128')
     .addFields(
         { name: 'Mise A Jour :', value: `Une commande userinfo arrive bientôt` },
         { name: 'ServerInfo :', value: `Refonte compléte de toutes les commandes.` },
     )
     .setTimestamp()
-    .setFooter({ text: '🎮・Chill Bot\'s'});
+    .setFooter({ text: '🎮・Fatality Bot\'s'});
 
     await interaction.reply({embeds: [exampleEmbed]});
 

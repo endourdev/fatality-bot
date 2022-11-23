@@ -6,7 +6,7 @@ module.exports = {
 		.setName('help')
 		.setDescription("Affiche toute les commandes du bot."),
 	async execute(interaction) {
-        const embed = new EmbedBuilder() .setColor(0x0099FF) .setTitle("🎮・Chill Bot Help\'s") .setDescription(`
+        const embed = new EmbedBuilder() .setColor(0x0099FF) .setTitle("🎮・Fatality Bot Help\'s") .setDescription(`
 
 __Utilitaires__ :
 
@@ -22,7 +22,7 @@ __Modération__ :
 
 > De nouvelles commandes de modération arrive`)
     .setTimestamp()
-    .setFooter({ text: '🎮・Chill Bot\'s'});
+    .setFooter({ text: '🎮・Fatality Bot\'s'});
 
         // interaction.guild is the object representing the Guild in which the command was run
         await interaction.reply({embeds: [embed]} );

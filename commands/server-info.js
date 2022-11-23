@@ -6,7 +6,7 @@ module.exports = {
         .setName('server-info')
         .setDescription('Voir les statistiques basique d\'un serveur.'),
     async execute(interaction) {
-    const embed = new EmbedBuilder() .setColor(0x0099FF) .setTitle("🎮・Chill Bot Server-Info") .setDescription(`
+    const embed = new EmbedBuilder() .setColor(0x0099FF) .setTitle("🎮・Fatality Bot Server-Info") .setDescription(`
 
 Serveur Information:
 
@@ -30,7 +30,7 @@ Serveur Information:
 
 > Utilisateur(s): ${interaction.guild.memberCount}`)
     .setTimestamp()
-    .setFooter({ text: '🎮・Chill Bot\'s'});
+    .setFooter({ text: '🎮・Fatality Bot\'s'});
 
         // interaction.guild is the object representing the Guild in which the command was run
         await interaction.reply({embeds: [embed]} );

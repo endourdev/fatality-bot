@@ -9,13 +9,13 @@ module.exports = {
         const sent = await interaction.reply({ content: 'Ping en cours', fetchReply: true });
         const exampleEmbed = new EmbedBuilder()
     .setColor(0x0099FF)
-    .setTitle(`🎮・Chill Bot Ping\'s`)
+    .setTitle(`🎮・Fatality Bot Ping\'s`)
     // .setThumbnail('https://cdn.discordapp.com/avatars/1041409110056382494/3de5e5286ad94e0d3823cdcb6a671e3a.webp?size=128')
     .addFields(
         { name: 'Ping :', value: `Latence : ${sent.createdTimestamp - interaction.createdTimestamp}ms` },
     )
     .setTimestamp()
-    .setFooter({ text: '🎮・Chill Bot\'s'});
+    .setFooter({ text: '🎮・Fatality Bot\'s'});
 
     await interaction.editReply({ content: " ", embeds: [exampleEmbed]});
 

@@ -10,10 +10,10 @@ module.exports = {
             let user = interaction.options.getUser("utilisateur")
             if(user != undefined){
             const avatars = new EmbedBuilder()
-    .setTitle("🎮・Chill Bot Avatar")
+    .setTitle("🎮・Fatality Bot Avatar")
     .setColor('#0099ff')
     
-    .setFooter({ text: '🎮・Chill Bot\'s'})
+    .setFooter({ text: '🎮・Fatality Bot\'s'})
     .setDescription('Voici l\'avatar demandé :')
     .setImage(user.displayAvatarURL({dynamic: true}))
     .setTimestamp()
@@ -29,13 +29,13 @@ interaction.reply({ embeds: [avatars]}),{}
                     .setURL(interaction.user.displayAvatarURL({dynamic: true})),
             );
                 const avatard = new EmbedBuilder()
-    .setTitle("🎮・Chill Bot Avatar")
+    .setTitle("🎮・Fatality Bot Avatar")
     .setColor('#0099ff')
     
     .setDescription('Voici votre avatar :')
     .setImage(interaction.user.displayAvatarURL({dynamic: true}))
     .setTimestamp()
-    .setFooter({ text: '🎮・Chill Bot\'s'});
+    .setFooter({ text: '🎮・Fatality Bot\'s'});
 
 interaction.reply({ embeds: [avatard], components: [row] });
 
