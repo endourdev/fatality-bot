@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Botium Reborn/commands"
+		},
+		{
+			"path": "../Botium Reborn/events"
+		}
+	],
+	"settings": {}
+}

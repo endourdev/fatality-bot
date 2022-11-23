@@ -1,1 +1,1 @@
-# chill-bot
+<h1>A private bot for my server</h1>
