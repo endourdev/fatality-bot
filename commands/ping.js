@@ -9,8 +9,7 @@ module.exports = {
         const sent = await interaction.reply({ content: 'Ping en cours', fetchReply: true });
         const exampleEmbed = new EmbedBuilder()
     .setColor(0x0099FF)
-    .setTitle(`Botium's Ping`)
-    .setURL('https://canary.discord.com/api/oauth2/authorize?client_id=1041409110056382494&permissions=4398046511095&scope=bot%20applications.commands')
+    .setTitle(`🎮・Chill Bot Ping\'s`)
     // .setThumbnail('https://cdn.discordapp.com/avatars/1041409110056382494/3de5e5286ad94e0d3823cdcb6a671e3a.webp?size=128')
     .addFields(
         { name: 'Ping :', value: `Latence : ${sent.createdTimestamp - interaction.createdTimestamp}ms` },

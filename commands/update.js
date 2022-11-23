@@ -8,12 +8,11 @@ module.exports = {
 	async execute(interaction) {
         const exampleEmbed = new EmbedBuilder()
     .setColor(0x0099FF)
-    .setTitle(`Botium's Update`)
-    .setURL('https://canary.discord.com/api/oauth2/authorize?client_id=1041409110056382494&permissions=4398046511095&scope=bot%20applications.commands')
+    .setTitle(`🎮・Chill Bot Update\'s`)
     // .setThumbnail('https://cdn.discordapp.com/avatars/1041409110056382494/3de5e5286ad94e0d3823cdcb6a671e3a.webp?size=128')
     .addFields(
         { name: 'Mise A Jour :', value: `Une commande userinfo arrive bientôt` },
-        { name: 'Nightly :', value: `Vous pouvez rejoindre la version Nightly de "Botium" pour avoir plus de mise à jour.` },
+        { name: 'ServerInfo :', value: `Refonte compléte de toutes les commandes.` },
     )
     .setTimestamp()
     .setFooter({ text: '🎮・Chill Bot\'s'});

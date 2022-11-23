@@ -6,7 +6,7 @@ module.exports = {
         .setName('server-info')
         .setDescription('Voir les statistiques basique d\'un serveur.'),
     async execute(interaction) {
-    const embed = new EmbedBuilder() .setColor(0x0099FF) .setTitle("Serveur Information") .setDescription(`
+    const embed = new EmbedBuilder() .setColor(0x0099FF) .setTitle("🎮・Chill Bot Server-Info") .setDescription(`
 
 Serveur Information:
 

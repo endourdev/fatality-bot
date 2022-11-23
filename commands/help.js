@@ -6,7 +6,7 @@ module.exports = {
 		.setName('help')
 		.setDescription("Affiche toute les commandes du bot."),
 	async execute(interaction) {
-        const embed = new EmbedBuilder() .setColor(0x0099FF) .setTitle("Aide") .setDescription(`
+        const embed = new EmbedBuilder() .setColor(0x0099FF) .setTitle("🎮・Chill Bot Help\'s") .setDescription(`
 
 __Utilitaires__ :
 

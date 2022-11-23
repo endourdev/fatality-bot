@@ -10,6 +10,7 @@ module.exports = {
             let user = interaction.options.getUser("utilisateur")
             if(user != undefined){
             const avatars = new EmbedBuilder()
+    .setTitle("🎮・Chill Bot Avatar")
     .setColor('#0099ff')
     
     .setFooter({ text: '🎮・Chill Bot\'s'})
@@ -28,9 +29,9 @@ interaction.reply({ embeds: [avatars]}),{}
                     .setURL(interaction.user.displayAvatarURL({dynamic: true})),
             );
                 const avatard = new EmbedBuilder()
+    .setTitle("🎮・Chill Bot Avatar")
     .setColor('#0099ff')
     
-    .setAuthor({ name: 'Votre Avatar'  ,  iconURL: interaction.user.displayAvatarURL({dynamic: true}) })
     .setDescription('Voici votre avatar :')
     .setImage(interaction.user.displayAvatarURL({dynamic: true}))
     .setTimestamp()
