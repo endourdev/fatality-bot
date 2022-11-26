@@ -40,7 +40,7 @@ npm install discord.js
 ### Développez avec discord.js
 
 ````
-Créer un fichier package.json et entrez ceci :
+Créer un fichier config.json et entrez ceci :
 ````
 ````
 {
