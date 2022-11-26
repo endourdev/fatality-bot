@@ -9,7 +9,6 @@ const { type } = require('node:os');
 // Déclare les Intents
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
-
 // Code Qui Permet D'enregister les slash commands
 const eventsPath = path.join(__dirname, 'events');
 const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
@@ -39,7 +38,7 @@ for (const file of commandFiles) {
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 	// client.user.setPresence('WATCHING')
-    client.user.setActivity("la version 0.0.2")
+    client.user.setActivity("la version 0.0.3")
     client.user.setStatus("dnd");
 })
 

@@ -20,7 +20,11 @@ __Utilitaires__ :
 
 __Modération__ :
 
-> De nouvelles commandes de modération arrive`)
+> Ban : permet de bannir un membres.
+
+> Kick : permet d'expusler un membre.
+
+> Clear : Permet de supprimer des messages.`)
     .setTimestamp()
     .setFooter({ text: '🎮・Fatality Bot\'s'});
 
