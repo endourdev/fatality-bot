@@ -39,7 +39,7 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 	// client.user.setPresence('WATCHING')
     client.user.setActivity("la version 0.0.3")
-    client.user.setStatus("dnd");
+    client.user.setStatus("online");
 })
 
 client.once(Events.ClientReady, () => {

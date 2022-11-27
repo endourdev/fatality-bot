@@ -3,28 +3,28 @@ const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require("disc
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("kick")
-        .setDescription("Kick a user from the discord server.")
+        .setDescription("Expulse un membre du serveur.")
         .setDefaultMemberPermissions(PermissionFlagsBits.KickMembers)
         .addUserOption(option =>
-            option.setName("target")
-                .setDescription("User to be kicked.")
+            option.setName("utilisateur")
+                .setDescription("Utilisateur qui doit être expulser.")
                 .setRequired(true)
         )
         .addStringOption(option =>
-            option.setName("reason")
-                .setDescription("Reason for the kick.")
+            option.setName("raison")
+                .setDescription("Raison du kick.")
         ),
 
     async execute(interaction) {
         const { channel, options } = interaction;
 
-        const user = options.getUser("target");
-        const reason = options.getString("reason") || "No reason provided";
+        const user = options.getUser("utilisateur");
+        const reason = options.getString("raison") || "Aucune raison fournie.";
 
         const member = await interaction.guild.members.fetch(user.id);
 
         const errEmbed = new EmbedBuilder()
-            .setDescription(`You can't take action on ${user.username} since they have a higher role.`)
+            .setDescription(`Vous ne pouvez pas expluser ${user.username} car son rôle est supérieur à toi.`)
             .setColor(0xc72c3b)
 
         if (member.roles.highest.position >= interaction.member.roles.highest.position)
@@ -33,10 +33,11 @@ module.exports = {
         await member.kick(reason);
 
         const embed = new EmbedBuilder()
-            .setDescription(`Succesfully kicked ${user} with reason: ${reason}`);
+            .setDescription(`${user} à été expulsé avec succés pour ${reason}`)
+            .setImage('https://tenor.com/view/kiss-gif-22640695')
 
         await interaction.reply({
-            embeds: [embed],
+            embeds: [embed], ephemeral:true
         });
     }
 }

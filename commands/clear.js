@@ -3,7 +3,7 @@ const {SlashCommandBuilder, CommandInteraction, PermissionFlagsBits, EmbedBuilde
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("clear")
-    .setDescription("Clear a specific amount of messages from a target or channel.")
+    .setDescription("Efface un montant précis de messages.")
     .setDefaultMemberPermissions(PermissionFlagsBits.ManageMessages)
     .addIntegerOption(option =>
         option.setName('montant')
@@ -44,12 +44,12 @@ module.exports = {
 
             await channel.bulkDelete(filtered).then(messages => {
                 res.setDescription(`Message de ${target} supprimer avec succés`);
-                interaction.reply({embeds: [res]}); // you can use ephemeral if you desire
+                interaction.reply({embeds: [res], ephemeral:true}); // you can use ephemeral if you desire
             });
         } else {
             await channel.bulkDelete(amount, true).then(messages => {
                 res.setDescription(`${messages.size} messages on été effacé avec succés.`);
-                interaction.reply({embeds: [res]});
+                interaction.reply({embeds: [res], ephemeral:true});
             });
         }
     }

@@ -34,6 +34,7 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setDescription(`${user} à été banni avec succés avec la raison : ${reason}`)
+            .setImage('https://tenor.com/view/kiss-gif-22640695')
             .setColor(0x5fb041)
             .setTimestamp()
             .setFooter({ text: '🎮・Fatality Bot\'s'});
