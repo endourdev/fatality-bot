@@ -7,7 +7,7 @@ module.exports = {
         .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers)
         .addUserOption(option =>
             option.setName("utilisateur")
-                .setDescription("User to be banned.")
+                .setDescription("🔨 Utilisateur qui doit être banni.")
                 .setRequired(true)
         )
         .addStringOption(option =>
@@ -24,7 +24,7 @@ module.exports = {
         const member = await interaction.guild.members.fetch(user.id);
 
         const errEmbed = new EmbedBuilder()
-            .setDescription(`Vous ne pouvez ban ${user.username} car il à un rôle plus haut.`)
+            .setDescription(`Hu ho, vous ne pouvez ban ${user.username} car il à un rôle plus haut.`)
             .setColor(0xc72c3b);
 
         if (member.roles.highest.position >= interaction.member.roles.highest.position)

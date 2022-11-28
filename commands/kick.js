@@ -7,7 +7,7 @@ module.exports = {
         .setDefaultMemberPermissions(PermissionFlagsBits.KickMembers)
         .addUserOption(option =>
             option.setName("utilisateur")
-                .setDescription("Utilisateur qui doit être expulser.")
+                .setDescription("🌬️ Utilisateur qui doit être expulser.")
                 .setRequired(true)
         )
         .addStringOption(option =>
@@ -24,7 +24,7 @@ module.exports = {
         const member = await interaction.guild.members.fetch(user.id);
 
         const errEmbed = new EmbedBuilder()
-            .setDescription(`Vous ne pouvez pas expluser ${user.username} car son rôle est supérieur à toi.`)
+            .setDescription(`Hu oh, vous ne pouvez pas expluser ${user.username} car son rôle est supérieur à vous.`)
             .setColor(0xc72c3b)
 
         if (member.roles.highest.position >= interaction.member.roles.highest.position)
