@@ -44,12 +44,17 @@ module.exports = {
 
             await channel.bulkDelete(filtered).then(messages => {
                 res.setDescription(`Message de ${target} supprimer avec succés`);
-                interaction.reply({embeds: [res], ephemeral:true}); // you can use ephemeral if you desire
+                    interaction.reply({embeds: [res],
+                    ephemeral: true
+                });
             });
         } else {
             await channel.bulkDelete(amount, true).then(messages => {
                 res.setDescription(`${messages.size} messages on été effacé avec succés.`);
-                interaction.reply({embeds: [res], ephemeral:true});
+                interaction.reply({
+                    embeds: [res],
+                    ephemeral: true
+                });
             });
         }
     }

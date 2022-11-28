@@ -28,7 +28,10 @@ module.exports = {
             .setColor(0xc72c3b)
 
         if (member.roles.highest.position >= interaction.member.roles.highest.position)
-            return interaction.reply({ embeds: [errEmbed], ephemeral: true });
+            return interaction.reply({ 
+                embeds: [errEmbed],
+                ephemeral: true 
+            });
 
         await member.kick(reason);
 
@@ -37,7 +40,8 @@ module.exports = {
             .setImage('https://tenor.com/view/kiss-gif-22640695')
 
         await interaction.reply({
-            embeds: [embed], ephemeral:true
+            embeds: [embed],
+            ephemeral: true
         });
     }
 }
