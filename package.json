@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/fofhgit/chill-bot#readme",
   "dependencies": {
-    "discord.js": "^14.6.0"
+    "autocode-discordjs": "^1.1.0",
+    "discord.js": "^14.6.0",
+    "moment": "^2.29.4"
   }
 }

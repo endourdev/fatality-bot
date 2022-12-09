@@ -3,7 +3,7 @@ const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } = require("disc
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("kick")
-        .setDescription("Expulse un membre du serveur.")
+        .setDescription("🌬️ Expulse un membre du serveur.")
         .setDefaultMemberPermissions(PermissionFlagsBits.KickMembers)
         .addUserOption(option =>
             option.setName("utilisateur")
@@ -37,7 +37,7 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setDescription(`${user} à été expulsé avec succés pour ${reason}`)
-            .setImage('https://tenor.com/view/kiss-gif-22640695')
+            .setImage('https://tenor.com/view/thor-strike-admin-ban-admin-ban-gif-22545175')
 
         await interaction.reply({
             embeds: [embed],
